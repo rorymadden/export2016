@@ -1,9 +1,1 @@
-<section class="partners pageSection"> <div class="container"> <h1>Sponsors</h1> <partner-list partners="main.sponsors"></partner-list> <!-- <div class="row" ng-if="main.partners.platinum.length > 0">
-      <h1>Platinum Partners</h1>
-      <partner-box partners="main.partners.platinum" level="platinum"></partner-box>
-    </div>
-
-    <div class="row" ng-if="main.partners.gold.length > 0">
-      <h1>Gold Partners</h1>
-      <partner-box partners="main.partners.gold" level="gold"></partner-box>
-    </div> --> <div class="text-center"> <a ui-sref="sponsor-opportunity" class="btn btn-lg btn-success large-text-button">Sponsorship and Exhibition Opportunities</a> </div> </div></section> <footer-block></footer-block>
+<section class="partners pageSection"> <div class="container"> <h1>Sponsors</h1> <!--     <partner-list partners="main.sponsors"></partner-list> --> <div class="row" ng-if="main.sponsors.gold.length > 0"> <h1>Gold Partners</h1> <partner-list partners="main.sponsors.gold"></partner-list> </div> <div class="row" ng-if="main.sponsors.silver.length > 0"> <h1>Silver Partners</h1> <partner-list partners="main.sponsors.silver"></partner-list> </div> <div class="row" ng-if="main.sponsors.bronze.length > 0"> <h1>Bronze Partners</h1> <partner-list partners="main.sponsors.bronze"></partner-list> </div> <div class="row" ng-if="main.sponsors.media.length > 0"> <h1>Media Partner</h1> <partner-list partners="main.sponsors.media"></partner-list> </div> <div class="text-center"> <a ui-sref="sponsor-opportunity" class="btn btn-lg btn-success large-text-button">Sponsorship and Exhibition Opportunities</a> </div> </div></section> <footer-block></footer-block>
