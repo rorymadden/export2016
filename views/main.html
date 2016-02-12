@@ -1,4 +1,6 @@
-<header-action></header-action> <section class="speakers"> <div class="container text-center"> <h1>A Selection of our 60+ Speakers</h1> <!-- <div class="col-xs-12 col-sm-12 speakers-keynotes row-eq-height" ng-repeat-start="keynote in main.keynotes">
+<header-action></header-action> <!-- <section class="speakers">
+  <div class="container text-center">
+    <h1>A Selection of our 60+ Speakers</h1> --> <!-- <div class="col-xs-12 col-sm-12 speakers-keynotes row-eq-height" ng-repeat-start="keynote in main.keynotes">
       <keynote-box keynote=keynote></keynote-box>
     </div>
     <div class="clearfix" ng-if="main.keynotes.length%2==1"></div>
@@ -30,16 +32,74 @@
 
       </div>
      </div>
-    </div> --> <div class="row row-flex row-flex-wrap"> <div class="col-xs-12 col-ms-6 col-sm-6 speakers-keynotes" ng-repeat="keynote in main.keynotes"> <keynote-box keynote="keynote" class="keynote-entry text-center"></keynote-box> </div> <div class="col-xs-12 col-ms-6 col-sm-6 speakers-keynotes" ng-if="main.keynotes.length%2==1"></div> </div> <!-- ENd Custom --> <div class="col-xs-12 col-ms-6 col-sm-3 col-md-3 speakers row-eq-height" ng-repeat-start="speaker in main.speakers"> <speaker-box speaker="speaker"></speaker-box> </div> <div class="clearfix" ng-if="$index%4==3"></div> <div ng-repeat-end=""></div> <div> <br> <a ui-sref="speakers" class="btn btn-lg btn-success large-text-button partner-button">View all Speakers</a> </div> </div> </section> <section class="about" name="about"> <div class="container text-center"> <!--     <h1>Streams</h1>
+    </div> --> <!--     <div class="row row-flex row-flex-wrap">
+      <div class="col-xs-12 col-ms-6 col-sm-6 speakers-keynotes" ng-repeat="keynote in main.keynotes">
+        <keynote-box keynote=keynote class="keynote-entry text-center"></keynote-box>
+      </div>
+      <div class="col-xs-12 col-ms-6 col-sm-6 speakers-keynotes" ng-if="main.keynotes.length%2==1"></div>
+    </div> --> <!-- ENd Custom --> <!--     <div class="col-xs-12 col-ms-6 col-sm-3 col-md-3 speakers row-eq-height" ng-repeat-start="speaker in main.speakers">
+      <speaker-box speaker=speaker></speaker-box>
+    </div>
+    <div class="clearfix" ng-if="$index%4==3"></div>
+    <div ng-repeat-end=""></div>
+
+    <div>
+      <br>
+      <a ui-sref="speakers" class="btn btn-lg btn-success large-text-button partner-button">View all Speakers</a>
+      </div>
+  </div>
+</section>
+
+<section class="about" name="about">
+  <div class="container text-center"> --> <!--     <h1>Streams</h1>
     <div class="row" >
       <div class="col-sm-6 col-md-3 streams" ng-repeat-start="stream in main.streams">
         <stream-box stream=stream></stream-box>
       </div>
       <div class="clearfix" ng-if="$index%4==3"></div>
       <div ng-repeat-end=""></div>
-    </div> --> <h1>Agenda</h1> <h2><a ui-sref="agenda">The full agenda is now available.</a></h2> <h3><a ui-sref="agenda">Browse the Agenda</a><br> Pick Your Sessions<br> Enjoy the Event</h3> <br> <action-button></action-button> </div> </section> <section class="partners"> <div class="container text-center"> <div class="row" ng-if="main.sponsors.platinum.length > 0"> <!-- <h1>Platinum Partners</h1> --> <h1>Brought to you by</h1> <partner-box partners="main.sponsors.platinum" level="platinum" class="row row-flex row-flex-wrap"></partner-box> </div> <div class="row" ng-if="main.sponsors.gold.length > 0"> <h1>In Partnership with</h1> <h2>Gold Sponsors</h2> <partner-box partners="main.sponsors.gold" level="gold" class="row row-flex row-flex-wrap"></partner-box> </div> <div class="row" ng-if="main.sponsors.silver.length > 0"> <h2>Silver Sponsors</h2> <partner-box partners="main.sponsors.silver" level="gold" class="row row-flex row-flex-wrap"></partner-box> </div> <div class="row" ng-if="main.sponsors.bronze.length > 0"> <h2>Bronze Sponsors</h2> <partner-box partners="main.sponsors.bronze" level="gold" class="row row-flex row-flex-wrap"></partner-box> </div> <div class="row" ng-if="main.sponsors.media.length > 0"> <h1>Media Partner</h1> <partner-box partners="main.sponsors.media" level="gold row row-flex row-flex-wrap"></partner-box> </div> <div> <br> <!-- <h1>Partnership Opportunities</h1>
-      <p>There are a range of partnership opportunities available from exhibition space to stream alignment to social event sponsorship.</p> --> <a ui-sref="sponsor-opportunity" class="btn btn-lg btn-success large-text-button partner-button">Sponsorship and Exhibition Opportunities</a> <!-- <p>We work with you to tailor a package that meets your needs. We know that marketing is data-driven and you need to validate your return on investment so as part of every sponsorship package we will share a post show report that details the success and exposure of each of our marketing initiatives.</p>
-      <p>Please contact <a href="mailto:sponsorship@exportleadership.com">sponsorship@exportleadership.com</a> to find out more information.</p> --> </div> </div> </section> <!-- <section class="news">
+    </div> --> <!--     <h1>Agenda</h1>
+    <h2><a ui-sref="agenda">The full agenda is now available.</a></h2>
+    <h3><a ui-sref="agenda">Browse the Agenda</a><br>
+    Pick Your Sessions<br>
+    Enjoy the Event</h3>
+    <br>
+    <action-button></action-button>
+  </div>
+</section> --> <!-- <section class="partners">
+  <div class="container text-center">
+    <div class="row" ng-if="main.sponsors.platinum.length > 0">
+      <h1>Brought to you by</h1>
+      <partner-box partners="main.sponsors.platinum" level="platinum" class=" row row-flex row-flex-wrap"></partner-box>
+    </div>
+
+    <div  class="row"  ng-if="main.sponsors.gold.length > 0">
+      <h1>In Partnership with</h1>
+      <h2>Gold Sponsors</h2>
+      <partner-box partners="main.sponsors.gold" level="gold" class="row row-flex row-flex-wrap" ></partner-box>
+    </div>
+
+     <div class="row"  ng-if="main.sponsors.silver.length > 0">
+      <h2>Silver Sponsors</h2>
+      <partner-box partners="main.sponsors.silver" level="gold" class=" row row-flex row-flex-wrap"></partner-box>
+    </div>
+     <div class="row"  ng-if="main.sponsors.bronze.length > 0">
+      <h2>Bronze Sponsors</h2>
+      <partner-box partners="main.sponsors.bronze" level="gold" class=" row row-flex row-flex-wrap"></partner-box>
+    </div>
+
+    
+    <div class="row"  ng-if="main.sponsors.media.length > 0">
+      <h1>Media Partner</h1>
+      <partner-box partners="main.sponsors.media" level="gold row row-flex row-flex-wrap"></partner-box>
+    </div>
+
+    <div>
+      <br> --> <!-- <h1>Partnership Opportunities</h1>
+      <p>There are a range of partnership opportunities available from exhibition space to stream alignment to social event sponsorship.</p> --> <!--       <a ui-sref="sponsor-opportunity" class="btn btn-lg btn-success large-text-button partner-button">Sponsorship and Exhibition Opportunities</a> --> <!-- <p>We work with you to tailor a package that meets your needs. We know that marketing is data-driven and you need to validate your return on investment so as part of every sponsorship package we will share a post show report that details the success and exposure of each of our marketing initiatives.</p>
+      <p>Please contact <a href="mailto:sponsorship@exportleadership.com">sponsorship@exportleadership.com</a> to find out more information.</p> --> <!--     </div>
+  </div>
+</section> --> <!-- <section class="news">
   <div class="container text-center">
     <h1>Latest News</h1>
     <div class="row">
@@ -61,4 +121,11 @@
       </div>
     </div>
   </div>
-</section> --> <section class="location"> <ui-gmap-google-map center="main.map.center" zoom="main.map.zoom" options="main.map.options"> <ui-gmap-marker idkey="main.marker.id" coords="main.marker.coords" options="main.marker.options"> </ui-gmap-marker> </ui-gmap-google-map> </section> <footer-block></footer-block>
+</section> --> <!-- <section class="location">
+  <ui-gmap-google-map center='main.map.center' zoom='main.map.zoom' options="main.map.options">
+
+    <ui-gmap-marker idkey='main.marker.id' coords='main.marker.coords' options="main.marker.options">
+    </ui-gmap-marker>
+
+  </ui-gmap-google-map>
+</section> --> <footer-block></footer-block>
